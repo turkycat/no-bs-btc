@@ -17,9 +17,29 @@ https://github.com/bitcoin/bips/blob/58ffd93812ff25e87d53d1f202fbb389fdfb85bb/bi
 
 # tools used
 
+this is a list of all the tools used in this video series. you don't need to install or use all of these tools.
+
+## my own tools
+
+I'm a big fan of BDK and bitcoin explorer, but sometimes very simple scripts are the way to go. I've build a couple repos that you can check out and experiment with.
+
+### extended key tools
+
+https://github.com/turkycat/extended-key-tools
+
+a series of bite-sized scripts used to conceptually understand how extended keys work.
+
+### spin up 'regtest' bitcoin nodes and fulcrum server
+
+https://github.com/turkycat/fulcrum-regtest
+
+interact with a bitcoin network locally on your own machine.
+
 ## bitcoin explorer
 
 https://github.com/libbitcoin/libbitcoin-explorer
+
+unfortunately, bitcoin explorer stopped releasing binary builds of this tool. Some people have trouble building this tool, so I will provide alternatives along the way.
 
 as of version 3.8 the `seed` command is removed from `bitcoin-explorer`. You can replicate the behavior using the following command, but please note that this is not a cryptographically-secure means of generating entropy and should not be used to create production wallets that secure real money. Many people have been burned by this in the past, hence the removal of the function.
 
